@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <title>log</title>
+</head>
+<body>
+        <form name="myform" onsubmit="myf();">
+<table class="table">
+    <tr>
+        <td>
+            user name
+        </td>
+        <td><input id="u" type="text" name="use"  class="form-control"></td>
+        <td>
+                password
+            </td>
+        <td><input type="password" name="pass" id="p" class="form-control"></td>
+        <tr>
+            <td><button type="button" class="btn btn-success" onclick="get();">submit</button></td>
+        </tr>
+
+    </tr>
+</table>
+</form>
+<script src="./log.js">
+function myf(){
+    var x=document.forms["myform"]["use"].value;
+    if(x==""){
+        alert("this field cant be empty")
+        return false;
+    }
+}
+</script>
+</body>
+</html>
